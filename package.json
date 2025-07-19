@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "start": "ts-node src/example.ts",
     "build": "rm -rf ./lib && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/pg": "^8.15.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "peerDependencies": {

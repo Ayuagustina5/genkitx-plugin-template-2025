@@ -1,13 +1,35 @@
-# Genkit Plugin
+# Genkit PostgreSQL Plugin
 
-This library provides a Genkit flow
+This is a Genkit plugin that allows you to connect to a PostgreSQL database and execute queries.
 
-## API
+## Installation
 
-### `yourFlow(ai)`
+```bash
+npm install
+```
 
-Creates a new flow.
+## Configuration
 
--   `ai`: Your Genkit AI instance.
+1.  Create a `config.json` file in the root of the project.
+2.  Add your database connection details to the `config.json` file:
 
-Returns a Genkit flow that you can use to interact with your plugin.
+```json
+{
+  "user": "your_user",
+  "host": "your_host",
+  "database": "your_database",
+  "password": "your_password",
+  "port": 5432,
+  "query": "SELECT * FROM your_table"
+}
+```
+
+## Usage
+
+To run the example, use the following command:
+
+```bash
+npm start
+```
+
+This will execute the query in `config.json` and print the result to the console.
